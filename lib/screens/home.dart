@@ -175,13 +175,13 @@ class _MyIndexScreenState extends State<MyIndexScreen> {
                                 ind: index,
                               ),
                               transitionDuration:
-                                  Duration(seconds: 1), // Add delay here
+                                  Duration(seconds: 3), // Add delay here
                               transitionsBuilder: (context, animation,
                                   secondaryAnimation, child) {
                                 return SlideTransition(
                                   position: Tween<Offset>(
-                                    begin: Offset(1.0, 0.0),
-                                    end: Offset(0.0, 0.0),
+                                    begin: const Offset(1.0, 0.0),
+                                    end: Offset.zero,
                                   ).animate(animation),
                                   child: child,
                                 );
